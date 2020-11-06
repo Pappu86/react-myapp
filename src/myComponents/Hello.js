@@ -7,7 +7,7 @@ function Hello(props) {
     return (
         <div>
             <button onClick={DoThis}>Click Me</button>
-            <h1>{props.name} I am a functional component</h1>
+            <h3>{props.name} I am a functional component</h3>
         </div>
     )
 }

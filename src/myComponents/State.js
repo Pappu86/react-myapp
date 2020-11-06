@@ -11,14 +11,14 @@ class StateComponent extends Component {
     }
 
     changeName=(name)=>{
-       this.setState({name:name});
+       this.setState({name:name, age:4});
     }
 
     render() {
         return (
             <div>
-                <h1 > {this.state.name} < /h1>
-                <h3> {this.state.age} </h3>
+                <h3 > {this.state.name} < /h3>
+                <h5> {this.state.age} </h5>
                 <button className="btn btn-primary" onClick={this.changeName.bind(this, "Zakaria")}>Change name</button>
             </div>
         );
